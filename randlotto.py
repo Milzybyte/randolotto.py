@@ -15,8 +15,6 @@ imgLabel = Label(window,image = img)
 
 heading = Label(window, text = "Winning numbers",
                 bg = "tan")
-                
-                
 label1 = Label(window, relief = "groove", 
                width = 2)
 label2 = Label(window, relief = "groove",
@@ -27,12 +25,10 @@ label4 = Label(window, relief = "groove",
                width = 2)
 label5 = Label(window, relief = "groove", 
                width = 2)
-
 powerLabel = Label(window, text = "Power ball number",
                    bg = "tan")
 label6 = Label(window, relief = "sunken", 
                width = 2)
-
 getButton = Button(window)
 resetButton = Button(window)
 
@@ -71,13 +67,13 @@ window.resizable(0,0)
 window.config(bg = "tan")
 
 getButton.config(text = "Generate Random Numbers",
-                    background = "green",
-                    padx = 10)
+                 background = "green",
+                 padx = 10)
 
 
 resetButton.config(text = "Reset",
-                      background = "red",
-                      padx = 10)
+                   background = "red",
+                   padx = 10)
 
 #Initial properties
 label1.config(text = "...")
@@ -103,6 +99,7 @@ def genRandNums():
     
     getButton.config(state = DISABLED)
     resetButton.config(state = NORMAL)
+
 #Resets labels 	
 def reset():
     label1.config(text = "...")
